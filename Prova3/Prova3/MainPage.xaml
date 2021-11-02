@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prova3.MainPage"
+             xmlns:views="clr-namespace:Prova3.Views">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Color x:Key="ThemeColor">#530100</Color>
+            <Color x:Key="GrayColor">Gray</Color>
+            <Color x:Key="BgColor">#f0f0f0</Color>
+            <Color x:Key="RedColor">Red</Color>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource BgColor}"/>
+                <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource ThemeColor}"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource GrayColor}"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource RedColor}"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}"/>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+
+    <TabBar>
+        <ShellContent Title="Allenamento" Icon="gym.png" ContentTemplate="{DataTemplate views:AllenamentoPage}"/>
+        <ShellContent Title="Scheda Palestra" Icon="training.png" ContentTemplate="{DataTemplate views:SchedaPalestra}"/>
+        <ShellContent Title="Alimentazione" Icon="food.png" ContentTemplate="{DataTemplate views:AlimentazionePage}"/>
+        <ShellContent Title="Profilo" Icon="user.png" ContentTemplate="{DataTemplate views:ProfiloPage}"/>
+    </TabBar>
+
+
+
+</Shell>

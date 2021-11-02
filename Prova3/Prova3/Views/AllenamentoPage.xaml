@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prova3.Views.AllenamentoPage"
+             Shell.NavBarIsVisible="False" BackgroundColor="{AppThemeBinding 
+                                                               Dark={StaticResource WindowBackgrounColorDark},
+                                                               Light={StaticResource WindowBackgrounColor}}">
+    <StackLayout>
+        <Label Text="GRUPPI MUSCOLARI" TextColor="Red" 
+               HorizontalOptions="Center" FontSize="30" 
+               FontAttributes="Bold" Margin="15"/>
+
+        <StackLayout Orientation="Horizontal">
+            <StackLayout Padding="20">
+                <Frame HeightRequest="120" WidthRequest="120"
+                       BackgroundColor="White" Padding="0"
+                       HasShadow="True" Margin="10" CornerRadius="20"
+                       HorizontalOptions="CenterAndExpand" BorderColor="DarkRed">
+                    <Grid>
+                        <ImageButton Source="squat.png" Margin="30" 
+                                     Aspect="AspectFill" Clicked="ImageButton_Clicked" 
+                                     HeightRequest="100"/>
+                        <Label Text="GAMBE" TextColor="DarkRed" FontSize="20" 
+                               FontAttributes="Bold" Margin="8"
+                               VerticalOptions="EndAndExpand"
+                               HorizontalOptions="CenterAndExpand"/>
+                    </Grid>    
+                </Frame> 
+            </StackLayout>
+
+            <StackLayout Padding="20">
+                <Frame HeightRequest="120" WidthRequest="120"
+                       BackgroundColor="White" Padding="0"
+                       HasShadow="True" Margin="10" CornerRadius="20"
+                       HorizontalOptions="CenterAndExpand" BorderColor="DarkRed">
+                    <Grid>
+                            <ImageButton Source="petto.png" Margin="30" 
+                                         Aspect="AspectFill" Clicked="ImageButton_Clicked" 
+                                         HeightRequest="100"/>
+
+                            <Label Text="PETTO" TextColor="DarkRed" FontSize="20" 
+                                   FontAttributes="Bold" Margin="8"
+                                   VerticalOptions="EndAndExpand"
+                                   HorizontalOptions="CenterAndExpand"/>
+                       </Grid> 
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <StackLayout Padding="20">
+                <Frame HeightRequest="120" WidthRequest="120"
+                       BackgroundColor="White" Padding="0"
+                       HasShadow="True" Margin="10" CornerRadius="20"
+                       HorizontalOptions="CenterAndExpand" BorderColor="DarkRed">
+                    <Grid>
+                        <ImageButton Source="schiena.png" Margin="30" 
+                                     Aspect="AspectFill" Clicked="ImageButton_Clicked" 
+                                     HeightRequest="100"/>
+                        <Label Text="SCHIENA" TextColor="DarkRed" FontSize="20" 
+                                   FontAttributes="Bold" Margin="8"
+                                   VerticalOptions="EndAndExpand"
+                                   HorizontalOptions="CenterAndExpand"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Padding="20">
+                <Frame HeightRequest="120" WidthRequest="120"
+                       BackgroundColor="White" Padding="0"
+                       HasShadow="True" Margin="10" CornerRadius="20"
+                       HorizontalOptions="CenterAndExpand" BorderColor="DarkRed">
+                    <Grid>
+                        <ImageButton Source="spalle.png" Margin="30" 
+                                     Aspect="AspectFill" Clicked="ImageButton_Clicked" 
+                                     HeightRequest="100"/>
+                        <Label Text="SPALLE" TextColor="DarkRed" FontSize="20" 
+                                   FontAttributes="Bold" Margin="8"
+                                   VerticalOptions="EndAndExpand"
+                                   HorizontalOptions="CenterAndExpand"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <StackLayout Padding="20">
+                <Frame HeightRequest="120" WidthRequest="120"
+                       BackgroundColor="White" Padding="0"
+                       HasShadow="True" Margin="10" CornerRadius="20"
+                       HorizontalOptions="CenterAndExpand" BorderColor="DarkRed">
+                    <Grid>
+                        <ImageButton Source="braccia.png" Margin="30" 
+                                     Aspect="AspectFill" Clicked="ImageButton_Clicked" 
+                                     HeightRequest="100"/>
+                        <Label Text="BRACCIA" TextColor="DarkRed" FontSize="20" 
+                                   FontAttributes="Bold" Margin="8"
+                                   VerticalOptions="EndAndExpand"
+                                   HorizontalOptions="CenterAndExpand"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Padding="20">
+                <Frame HeightRequest="120" WidthRequest="120"
+                       BackgroundColor="White" Padding="0"
+                       HasShadow="True" Margin="10" CornerRadius="20"
+                       HorizontalOptions="CenterAndExpand" BorderColor="DarkRed">
+                    <Grid>
+                        <ImageButton Source="addome.png" Margin="30" 
+                                     Aspect="AspectFill" Clicked="ImageButton_Clicked" 
+                                     HeightRequest="100"/>
+                        <Label Text="ADDOME" TextColor="DarkRed" FontSize="20" 
+                                   FontAttributes="Bold" Margin="8"
+                                   VerticalOptions="EndAndExpand"
+                                   HorizontalOptions="CenterAndExpand"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:Prova3.ViewModels" 
+             xmlns:model="clr-namespace:Prova3.Models" 
+             x:DataType="viewmodels:AlimentazioneViewModel"
+             x:Class="Prova3.Views.AlimentazionePage">
+    <ContentPage.BindingContext>
+        <viewmodels:AlimentazioneViewModel/>
+    </ContentPage.BindingContext>
+   
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding AddScheda}"/>
+    </ContentPage.ToolbarItems>
+
+
+    <ListView BackgroundColor="Transparent"
+              CachingStrategy="RecycleElement"
+              ItemsSource="{Binding Schede}"
+              HasUnevenRows="True"
+              IsPullToRefreshEnabled="True"
+              IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+              RefreshCommand="{Binding RefreshCommand}"
+              RefreshControlColor="{StaticResource RefreshColor}"
+              SelectionMode="None"
+              SeparatorVisibility="None">
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="model:Scheda">
+                <ViewCell>
+                    <Grid Padding="10">
+                        <Frame CornerRadius="20" HasShadow="True">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Label VerticalOptions="Center"
+                                           FontSize="Large"
+                                           Text="{Binding Name}"
+                                           TextColor="Black"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+    </ListView>
+</ContentPage>

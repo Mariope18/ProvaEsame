@@ -1,0 +1,14 @@
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\Prova3.csproj.AssemblyReference.cache
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\Prova3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\App.xaml.g.cs
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\MainPage.xaml.g.cs
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\Views\AlimentazionePage.xaml.g.cs
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\Views\AllenamentoPage.xaml.g.cs
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\Views\DetailPageAllenamento.xaml.g.cs
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\Views\ProfiloPage.xaml.g.cs
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\Prova3.AssemblyInfoInputs.cache
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\Prova3.AssemblyInfo.cs
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\Prova3.csproj.CoreCompileInputs.cache
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\Prova3.dll
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\ref\Prova3.dll
+C:\Users\Mario\Desktop\WorkspaceVisualStudio\Prova3\Prova3\Prova3\obj\Debug\netstandard2.1\Prova3.pdb

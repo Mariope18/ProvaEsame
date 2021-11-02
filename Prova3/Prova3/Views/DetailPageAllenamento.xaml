@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Prova3.Views.DetailPageAllenamento"
+             xmlns:viewmodels="clr-namespace:Prova3.ViewModels"
+             BackgroundColor="White"
+             x:DataType="viewmodels:AllenamentoViewModel"
+             xmlns:model="clr-namespace:Prova3.Models">
+
+    <ContentPage.BindingContext>
+        <viewmodels:AllenamentoViewModel/>
+    </ContentPage.BindingContext>
+
+    <ListView CachingStrategy="RecycleElement"
+              BackgroundColor="Transparent"
+              HasUnevenRows="True"
+              ItemsSource="{Binding Esercizio}">
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="model:Esercizio">
+                <ViewCell>
+                    <Grid Padding="10">
+                        <Frame CornerRadius="20"
+                               HasShadow="True">
+                            <StackLayout>
+                                <StackLayout>
+                                    <Label VerticalOptions="Center"
+                                       FontSize="Large"
+                                       Text="{Binding Name}"
+                                       TextColor="Black"/>
+                                    <Label VerticalOptions="Center"
+                                       FontSize="Small"
+                                       Text="{Binding Group}"
+                                       TextColor="Red"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
